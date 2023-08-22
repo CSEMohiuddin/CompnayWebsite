@@ -1,0 +1,49 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Titillium+Web:wght@200;300;400;600;700&display=swap'); */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chatBot ::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+.card:hover .text{
+     color: white;
+}
+.card:hover .icon {
+    color: white;
+}
+.card:hover .iconWraper {
+    background: rgba(105, 211, 243, 0.466);
+}
+.moreServiceCard:hover .serviceBorder{
+    width: 100px;
+}
+.moreServiceCard:hover .moreServiceIcon{
+    transform: scale(1.1);
+    color: blue;
+}
+.moreServiceCard:hover .moreServiceText{
+    color: blue;
+}
+
+@layer components {
+    .container {
+        @apply max-w-screen-xl mx-auto px-3 md:px-6 lg:px-10
+    }
+    .heading {
+        @apply text-dark text-2xl md:text-3xl lg:text-4xl font-bold dark:text-gray-300
+    }
+    .paragraph {
+        @apply text-base md:text-lg font-normal  text-darkLight font-sans dark:text-gray-400
+    }
+}
